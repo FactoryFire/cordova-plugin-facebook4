@@ -105,6 +105,7 @@
 
             if ([command.arguments count] >= 3) {
                 // If count is 3 we will send params and a value to sum
+                return;
                 value = [[command.arguments objectAtIndex:2] doubleValue];
                 [FBSDKAppEvents logEvent:eventName valueToSum:value parameters:params];
             }
